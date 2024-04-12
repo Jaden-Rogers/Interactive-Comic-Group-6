@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class CardSlot : MonoBehaviour, IDropHandler
+{
+
+    public bool emptySlot = true;
+    public int indexSlotNumber;
+    public bool isEnemySlot;
+    public bool isHolsterSlot;
+    public bool isItemSlot;
+    private Item item;
+
+
+    public void Start()
+    {
+        item = GetComponentInChildren<Item>();
+
+    }
+
+    public void Update()
+    {
+
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (transform.childCount == 0)
+        {
+
+            GameObject dropped = eventData.pointerDrag;
+            Item item = dropped.GetComponent<Item>();
+            PickupController draggedItem = dropped.GetComponent<PickupController>();
+
+            draggedItem.parentAfterDrag = transform;
+
+        }
+            emptySlot = false;
+    }
+
+
+}
+
