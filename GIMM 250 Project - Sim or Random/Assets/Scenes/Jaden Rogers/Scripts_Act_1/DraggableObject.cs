@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PickupController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public Image image;
     [HideInInspector] public Transform parentAfterDrag;

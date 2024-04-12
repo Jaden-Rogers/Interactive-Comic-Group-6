@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardSlot : MonoBehaviour, IDropHandler
+public class DropSlot : MonoBehaviour, IDropHandler
 {
 
     public bool emptySlot = true;
     public int indexSlotNumber;
-    public bool isEnemySlot;
     public bool isHolsterSlot;
     public bool isItemSlot;
     private Item item;
@@ -32,7 +31,7 @@ public class CardSlot : MonoBehaviour, IDropHandler
 
             GameObject dropped = eventData.pointerDrag;
             Item item = dropped.GetComponent<Item>();
-            PickupController draggedItem = dropped.GetComponent<PickupController>();
+            DraggableObject draggedItem = dropped.GetComponent<DraggableObject>();
 
             draggedItem.parentAfterDrag = transform;
 
