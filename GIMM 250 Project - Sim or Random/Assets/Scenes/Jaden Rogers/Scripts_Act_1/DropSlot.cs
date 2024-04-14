@@ -9,7 +9,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
     public bool emptySlot = true;
     public int indexSlotNumber;
     public bool isHolsterSlot;
-    public bool isItemSlot;
+    public bool isAnswerSlot;
     private Item item;
 
 
@@ -30,7 +30,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
         {
 
             GameObject dropped = eventData.pointerDrag;
-            Item item = dropped.GetComponent<Item>();
+            item = dropped.GetComponent<Item>();
             DraggableObject draggedItem = dropped.GetComponent<DraggableObject>();
 
             draggedItem.parentAfterDrag = transform;
