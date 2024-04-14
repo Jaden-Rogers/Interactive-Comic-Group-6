@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class CameraFollow : MonoBehaviour
+public class AidanCameraFollow : MonoBehaviour
 {
     // Offset between the camera and the target position
     private Vector3 offset = new Vector3(0f, 0f, -10f);

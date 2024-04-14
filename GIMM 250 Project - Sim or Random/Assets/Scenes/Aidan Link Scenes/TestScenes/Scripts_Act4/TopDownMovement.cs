@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownMovement : MonoBehaviour
+public class AidanTopDownMovement : MonoBehaviour
 {
     float speed = 300; // Speed given to attached object
     public Rigidbody2D rb; // Reference to the Rigidbody component, attached to the GameObject
