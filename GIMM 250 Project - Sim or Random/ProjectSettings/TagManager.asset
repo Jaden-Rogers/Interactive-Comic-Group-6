@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+  - Act2Icons
+  - Toothbrush
+  - TP
+  - Handcuffs
+  - Rat
   layers:
   - Default
   - TransparentFX
