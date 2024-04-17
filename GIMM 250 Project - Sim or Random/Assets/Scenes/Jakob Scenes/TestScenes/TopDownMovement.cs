@@ -9,12 +9,19 @@ public class TopDownMovement : MonoBehaviour
     private Vector2 moveInput; // Vector to store input for movement
 
     [SerializeField] private AudioClip ratSound;
+    [SerializeField] private AudioClip toiletFlush;
+    [SerializeField] private AudioClip Handcuffs;
+    [SerializeField] private AudioClip Toothbrush;
     private AudioSource audioSource;
+
+    
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
+
+    //MOVEMENT CODE 
 
     void Update()
     {
@@ -30,21 +37,20 @@ public class TopDownMovement : MonoBehaviour
         rb.velocity = moveInput * speed;
     }
 
+    //SOUND EFFECT CODE
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if collided with an object tagged as "Icon"
         if (other.CompareTag("TP"))
         {
-            // Play the sound effect associated with the icon
             if (ratSound != null && audioSource != null)
             {
-                audioSource.clip = ratSound;
+                audioSource.clip = toiletFlush;
                 audioSource.Play();
             }
         }
         if (other.CompareTag("Rat"))
         {
-            // Play the sound effect associated with the icon
             if (ratSound != null && audioSource != null)
             {
                 audioSource.clip = ratSound;
@@ -53,19 +59,17 @@ public class TopDownMovement : MonoBehaviour
         }
         if (other.CompareTag("Handcuffs"))
         {
-            // Play the sound effect associated with the icon
             if (ratSound != null && audioSource != null)
             {
-                audioSource.clip = ratSound;
+                audioSource.clip = Handcuffs;
                 audioSource.Play();
             }
         }
         if (other.CompareTag("Toothbrush"))
         {
-            // Play the sound effect associated with the icon
             if (ratSound != null && audioSource != null)
             {
-                audioSource.clip = ratSound;
+                audioSource.clip = Toothbrush;
                 audioSource.Play();
             }
         }
