@@ -9,11 +9,13 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public Image image;
     [HideInInspector] public Transform parentAfterDrag;
     private Item[] item;
+    public Canvas canvas;
 
 
     public void Start()
     {
         item = FindObjectsOfType<Item>();
+        canvas = FindObjectOfType<Canvas>();
     }
 
     private void Update()
@@ -25,7 +27,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         //Debug.Log("OnBeginDrag");
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
+        transform.SetParent(canvas.transform);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
 
