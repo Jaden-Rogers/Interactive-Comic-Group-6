@@ -10,6 +10,7 @@ TagManager:
   - TP
   - Handcuffs
   - Rat
+  - Key
   layers:
   - Default
   - TransparentFX

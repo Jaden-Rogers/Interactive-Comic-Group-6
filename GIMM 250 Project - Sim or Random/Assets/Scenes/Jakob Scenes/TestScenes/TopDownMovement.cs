@@ -14,7 +14,7 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] private AudioClip Toothbrush;
     private AudioSource audioSource;
 
-    
+    [SerializeField] private GameObject key; // Reference to the key GameObject
 
     private void Start()
     {
@@ -35,12 +35,20 @@ public class TopDownMovement : MonoBehaviour
         // Set the velocity of the Rigidbody to move the object in the desired direction
         // Multiplied by the speed to control actual movement speed of attached object
         rb.velocity = moveInput * speed;
+
+        // Update the position of the key if it is a child of the player
+        if (key.transform.parent == transform)
+        {
+            key.transform.localPosition = Vector3.zero; // Set key's local position to zero relative to the player
+      
+        }
     }
 
     //SOUND EFFECT CODE
 
     void OnTriggerEnter2D(Collider2D other)
     {
+      
         if (other.CompareTag("TP"))
         {
             if (ratSound != null && audioSource != null)
@@ -72,6 +80,11 @@ public class TopDownMovement : MonoBehaviour
                 audioSource.clip = Toothbrush;
                 audioSource.Play();
             }
+        }
+        
+        if (other.gameObject == key)
+        {
+            key.transform.parent = transform;
         }
     }
 }
