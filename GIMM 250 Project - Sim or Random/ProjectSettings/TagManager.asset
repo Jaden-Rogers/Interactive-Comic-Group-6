@@ -5,7 +5,23 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+Aidan-Minigame1.2
   - Enemy
+Jakob_MiniGameDesign2
+  - Act2Icons
+  - Toothbrush
+  - TP
+  - Handcuffs
+  - Rat
+  - Key
+  - Circle
+  - Lock
+  - ParticleSystem
+  - AnswerSlot
+  - NumberUI
+  - HolsterSlot
+main
+main
   layers:
   - Default
   - TransparentFX
@@ -15,9 +31,9 @@ TagManager:
   - UI
   - Above UI
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Midground
+  - Foreground
   - 
   - 
   - 
@@ -48,4 +64,7 @@ TagManager:
     locked: 0
   - name: Trail
     uniqueID: 2191356311
+    locked: 0
+  - name: Key
+    uniqueID: 1259205705
     locked: 0
