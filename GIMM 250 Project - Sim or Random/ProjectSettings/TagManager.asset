@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+  - ParticleSystem
+  - AnswerSlot
+  - NumberUI
+  - HolsterSlot
   layers:
   - Default
   - TransparentFX
@@ -14,9 +18,9 @@ TagManager:
   - UI
   - Above UI
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Midground
+  - Foreground
   - 
   - 
   - 
