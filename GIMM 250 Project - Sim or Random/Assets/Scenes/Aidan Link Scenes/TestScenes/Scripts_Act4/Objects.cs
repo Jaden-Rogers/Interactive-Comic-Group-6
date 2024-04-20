@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Objects : MonoBehaviour
 {
-    public float speed = 5f; // Speed at which the object moves
+    public float speed = 5f; // Speed of object
+    public float rotationSpeed = 20f; // object rotation
 
-    // Update is called once per frame
     void Update()
     {
-        // Move the object from right to left
+        //Moves object from the right to the left
         transform.position += Vector3.left * speed * Time.deltaTime;
 
-        // If the object has moved off the left side of the screen, destroy it
-        if (transform.position.x < -30) // Adjust this value based on your needs
+        //Rotates the object
+        transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
+
+        //Destroys object when it goes off screen
+        if (transform.position.x < -30)
         {
             Destroy(gameObject);
         }
