@@ -1,47 +1,58 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AidanTopDownMovement : MonoBehaviour
 {
     float speed = 300; // Speed given to attached object
-    public Rigidbody2D rb; // Reference to the Rigidbody component, attached to the GameObject
-    private Vector2 moveInput; // Vector to store input for movement
-    private bool isMovingUp = true; // Flag to track direction of movement
-    float speedIncreasePerSecond = 20; // Amount to increase speed by each second
+    float speed1 = 600;
+    public Rigidbody2D rb;
+    private Vector2 moveInput;
+    private bool isMovingUp = true;
+    float speedIncreasePerSecond = 10; //Speed increase per second
+    float rotationSpeed = 180f; // Rotation speed in degrees per second
+
     void Update()
     {
-        // If the space bar is hit, toggle the direction of movement
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //If space is pressed, change direction
         {
             isMovingUp = !isMovingUp;
         }
 
-        // Set the direction of movement based on the isMovingUp flag
-        moveInput.y = isMovingUp ? 1 : -1;
+        moveInput.y = isMovingUp ? 1 : -1; // Set moveInput.y to 1 if isMovingUp is true, otherwise set it to -1
 
-        speed += speedIncreasePerSecond * Time.deltaTime;
+        speed += speedIncreasePerSecond * Time.deltaTime; //Speed increasing
 
-        // Set the velocity of the Rigidbody to move the object in the desired direction
-        // Multiplied by the speed to control actual movement speed of attached object
-        // We set the x component of the velocity to 0 to prevent horizontal movement
-        rb.velocity = new Vector2(0, moveInput.y) * speed;
+        rb.velocity = new Vector2(0, moveInput.y) * speed; //Move object
+
+        rb.velocity = new Vector2(speed, moveInput.y * speed1); //Move object
+
+        transform.Rotate(0, 0, rotationSpeed * Time.deltaTime); //Rotate player
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision) //Function to detect collision with enemy
     {
-    // Check if the object we collided with is a barrier
-        if (collision.gameObject.tag == "Barrier")
+        if (collision.gameObject.tag == "Enemy")
         {
-            // If it is, end the game
             EndGame();
+
+            ScoreDisplay scoreDisplay = GetComponent<ScoreDisplay>();
+
+            // If the ScoreDisplay script is found, stop the timer
+            if (scoreDisplay != null)
+            {
+                scoreDisplay.isRunning = false;
+
+                PlayerPrefs.SetFloat("Score", scoreDisplay.score); // Save the score to the PlayerPrefs
+            }
         }
     }
-
     void EndGame()
     {
-    // Here you can handle what happens when the game ends
-    // For example, you might load a game over screen
-    Debug.Log("Game Over");
+        Debug.Log("Game Over"); //Debug message to console
+        SceneManager.LoadScene("Aidan End Menu"); //Load EndScreen scene
+        rb.constraints = RigidbodyConstraints2D.FreezePosition; //Freeze player position
+
     }
 }

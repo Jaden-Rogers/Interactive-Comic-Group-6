@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+Aidan-Minigame1.2
+  - Enemy
 Jakob_MiniGameDesign2
   - Act2Icons
   - Toothbrush
@@ -18,6 +20,7 @@ Jakob_MiniGameDesign2
   - AnswerSlot
   - NumberUI
   - HolsterSlot
+main
 main
   layers:
   - Default
