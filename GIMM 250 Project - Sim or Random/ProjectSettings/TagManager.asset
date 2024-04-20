@@ -5,10 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+Jakob_MiniGameDesign2
+  - Act2Icons
+  - Toothbrush
+  - TP
+  - Handcuffs
+  - Rat
+  - Key
+  - Circle
+  - Lock
   - ParticleSystem
   - AnswerSlot
   - NumberUI
   - HolsterSlot
+main
   layers:
   - Default
   - TransparentFX
@@ -51,4 +61,7 @@ TagManager:
     locked: 0
   - name: Trail
     uniqueID: 2191356311
+    locked: 0
+  - name: Key
+    uniqueID: 1259205705
     locked: 0
