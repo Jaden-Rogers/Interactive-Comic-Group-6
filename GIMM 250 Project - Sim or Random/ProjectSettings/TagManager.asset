@@ -11,6 +11,8 @@ TagManager:
   - Handcuffs
   - Rat
   - Key
+  - Circle
+  - Lock
   layers:
   - Default
   - TransparentFX
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: Trail
     uniqueID: 2191356311
+    locked: 0
+  - name: Key
+    uniqueID: 1259205705
     locked: 0
