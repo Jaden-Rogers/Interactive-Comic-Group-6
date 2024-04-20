@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Barrier
+Jakob_MiniGameDesign2
   - Act2Icons
   - Toothbrush
   - TP
@@ -13,6 +14,11 @@ TagManager:
   - Key
   - Circle
   - Lock
+  - ParticleSystem
+  - AnswerSlot
+  - NumberUI
+  - HolsterSlot
+main
   layers:
   - Default
   - TransparentFX
@@ -22,9 +28,9 @@ TagManager:
   - UI
   - Above UI
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Midground
+  - Foreground
   - 
   - 
   - 
