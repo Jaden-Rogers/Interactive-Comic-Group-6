@@ -76,7 +76,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         foreach (GameObject particle in particleSystems)
         {
-            Debug.Log(particle.transform.parent.tag);
+            //Debug.Log(particle.transform.parent.tag);
             if (particle.transform.parent.tag == "AnswerSlot")
             {
                 particle.SetActive(false);
@@ -88,7 +88,7 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             }
         }
 
-        Debug.Log(numberUI.transform.parent.tag);
+        //Debug.Log(numberUI.transform.parent.tag);
         if (parentAfterDrag.tag == "AnswerSlot")
         {
             numberText.alpha = 1;
