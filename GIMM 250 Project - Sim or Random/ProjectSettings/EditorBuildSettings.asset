@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Aidan Link Scenes/TestScenes/Test Scene Aidan 1.1.unity
+    path: Assets/Scenes/Aidan Link Scenes/TestScenes/(Test)Test Scene Aidan 1.1.unity
     guid: ea86f3bb1f948a842a6b6618d3c8f9f8
   - enabled: 0
-    path: Assets/Scenes/Aidan Link Scenes/TestScenes/Aidan End Menu.unity
+    path: Assets/Scenes/Aidan Link Scenes/TestScenes/(Test)Aidan End Menu.unity
     guid: 3307152e664fbc74e800ec59dc938cd3
   m_configObjects: {}
