@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class TopDownMovement : MonoBehaviour
 {
@@ -15,10 +16,20 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] private GameObject key; // Reference to the key GameObject
     [SerializeField] private Transform circle; // Reference to the circle Transform
 
+    private Button upButton; // Reference to the button component
+    private Button downButton;
+    private Button leftButton;
+    private Button rightButton;
+
     private bool keyCollected = false; // Flag to track if the key has been collected
 
     private void Start()
     {
+        upButton = GameObject.Find("UpButton").GetComponent<Button>();
+        downButton = GameObject.Find("DownButton").GetComponent<Button>();
+        leftButton = GameObject.Find("LeftButton").GetComponent<Button>();
+        rightButton = GameObject.Find("RightButton").GetComponent<Button>();
+
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -26,9 +37,18 @@ public class TopDownMovement : MonoBehaviour
 
     void Update()
     {
+        // on button press, move the player in the desired direction
+        upButton.onClick.AddListener(() => moveInput.y = 1);
+        downButton.onClick.AddListener(() => moveInput.y = -1);
+        leftButton.onClick.AddListener(() => moveInput.x = -1);
+        rightButton.onClick.AddListener(() => moveInput.x = 1);
+        // on button release, stop the player
+
+
+
         //Gets the horizontal and vertical input from the player
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
+        //moveInput.x = Input.GetAxisRaw("Horizontal");
+        //moveInput.y = Input.GetAxisRaw("Vertical");
 
         //Normalizes the movement vector to ensure consistent speed in all directions
         moveInput.Normalize();
