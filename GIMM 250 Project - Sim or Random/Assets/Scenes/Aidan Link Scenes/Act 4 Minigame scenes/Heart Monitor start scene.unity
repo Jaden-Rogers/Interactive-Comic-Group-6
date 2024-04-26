@@ -786,7 +786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226.6806, y: 200}
+  m_AnchoredPosition: {x: 226.6806, y: 177}
   m_SizeDelta: {x: 343.3185, y: 85.7682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341010543
@@ -809,16 +809,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Avoid the incoming objects
+  m_text: '1) Avoid the incoming objects
 
 
 
-    - Don''t touch the top or bottom
+    2) Don''t touch the top or bottom
 
 
 
-    -
-    The longer you stay alive the more points you get!'
+    3)
+    The longer you stay alive the faster you move!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec0730b9a0cbb844692c9f10849b2575, type: 2}
   m_sharedMaterial: {fileID: 7933216101500871250, guid: ec0730b9a0cbb844692c9f10849b2575, type: 2}
