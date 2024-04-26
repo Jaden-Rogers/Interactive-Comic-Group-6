@@ -55,4 +55,9 @@ public class AidanTopDownMovement : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezePosition; //Freeze player position
 
     }
+
+    public void MovePlayer()
+    {   
+            isMovingUp = !isMovingUp;
+    }
 }
