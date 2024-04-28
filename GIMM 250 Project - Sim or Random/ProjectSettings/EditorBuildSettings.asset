@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jaden Rogers/MainMenuScenes/MainMenu.unity
     guid: eabeadbe0c6728141b5a9be433ae708e
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/IntroCinematic/IntroCinematicScene.unity
+    guid: 84cb2e487c0ef4948909d89f91fcc2a0
+  - enabled: 1
+    path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_A/Act_1_A.unity
+    guid: 033a6bd8620bbfd44a9cf73cd6ca7e44
+  - enabled: 1
+    path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_A/Act_1_A2.unity
+    guid: c42913db030e62d41893caf4e861a6bd
+  - enabled: 1
+    path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_B/Act_1_B2.unity
+    guid: 3c255bd0b898d8e4a91f0ccbd7d7a562
   m_configObjects: {}

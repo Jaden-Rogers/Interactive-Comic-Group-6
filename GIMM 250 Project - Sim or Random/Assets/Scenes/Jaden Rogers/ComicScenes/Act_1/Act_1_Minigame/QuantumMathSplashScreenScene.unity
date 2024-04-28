@@ -342,9 +342,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 215541064}
-        m_TargetAssemblyTypeName: FinalScore, Assembly-CSharp
-        m_MethodName: CalculateScore
-        m_Mode: 1
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLevelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -400,9 +400,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 215541059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60bcd49cc5135c041a7696cc3e9dff43, type: 3}
+  m_Script: {fileID: 11500000, guid: 708412a7a2f18cc47a56c9683a03ac36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1751940461}
+  transitionTime: 1
+  LevelIndex: 0
 --- !u!1 &222089844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1068,11 @@ Transform:
 --- !u!224 &1751940459 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1051022483372993632, guid: 11c05a56b7e9e0d459cf6b910cc85c79, type: 3}
+  m_PrefabInstance: {fileID: 8141381682232134759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1751940461 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1333412136937454336, guid: 11c05a56b7e9e0d459cf6b910cc85c79, type: 3}
   m_PrefabInstance: {fileID: 8141381682232134759}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1845929316

@@ -874,6 +874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bcd49cc5135c041a7696cc3e9dff43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctAnswerScene: 0
+  wrongAnswerScene: 0
 --- !u!1 &217063448
 GameObject:
   m_ObjectHideFlags: 0
