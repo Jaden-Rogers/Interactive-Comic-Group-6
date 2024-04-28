@@ -20,4 +20,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_B/Act_1_B2.unity
     guid: 3c255bd0b898d8e4a91f0ccbd7d7a562
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_A/Act2_A.unity
+    guid: e08233a3bca434f80b755f02276f31fa
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_A/Act2_A_Ending.unity
+    guid: db816710ace314d419e6fad9f0048cde
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_B/Act2_B.unity
+    guid: fd576aeeeb58d4af89cb6d4dbbd3bf9c
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_B/Act2_B_Ending.unity
+    guid: ba859ae05e7fc0144bbcc84094d664d0
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_C/Act2_C.unity
+    guid: 701ed4dc0c79a47c18ec5c997c167286
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_C/Act2_C_Ending.unity
+    guid: a04445de569929d4aa475a30c9610197
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_D/Act2_D.unity
+    guid: b9260e5d8653043fab1e73da9b5929fc
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_D/Act2_D_Ending.unity
+    guid: 082f7060bcd328547ba4bdb47d968777
   m_configObjects: {}

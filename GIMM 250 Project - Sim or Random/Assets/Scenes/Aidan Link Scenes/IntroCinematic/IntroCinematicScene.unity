@@ -537,6 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1801147703}
   transitionTime: 1
+  LevelIndex: 0
 --- !u!114 &772459884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +826,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870106086}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a3f1b6152ec6a3543ae8420017572580, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c6fb1324918af0b46aa15699883a4d4a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
