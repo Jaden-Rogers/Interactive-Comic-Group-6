@@ -1367,9 +1367,7 @@ MonoBehaviour:
   - {fileID: 1622757648}
   currentPage: 0
   levelLoader: {fileID: 0}
-  nextSceneIndex: 0
-  nextPageButton: {fileID: 0}
-  previousPageButton: {fileID: 0}
+  nextSceneIndex: 13
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

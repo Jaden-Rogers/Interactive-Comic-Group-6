@@ -12,10 +12,13 @@ public class FinalScore : MonoBehaviour
     [SerializeField] private int correctAnswerScene;
     [SerializeField] private int wrongAnswerScene;
 
+    private PathManager pathManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        pathManager = FindObjectOfType<PathManager>();
         
     }
 
@@ -47,11 +50,13 @@ public class FinalScore : MonoBehaviour
 
         if (score >= 70)
         {
+            pathManager.passedTest = true;
             // load the next level if the score is greater than or equal to 80
             FindObjectOfType<LevelLoader>().LoadLevelByIndex(correctAnswerScene);
         }
         else
         {
+            pathManager.passedTest = false;
             // load the wrong answer scene if the score is less than 80
             FindObjectOfType<LevelLoader>().LoadLevelByIndex(wrongAnswerScene);
         }

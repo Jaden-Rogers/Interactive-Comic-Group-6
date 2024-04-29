@@ -11,13 +11,9 @@ public class PageFlipping : MonoBehaviour
     // Start is called before the first frame update
     public LevelLoader levelLoader;
     public int nextSceneIndex;
-    public Button nextPageButton;
-    public Button previousPageButton;
 
     void Start()
     {
-        nextPageButton = GameObject.Find("NextPageButton").GetComponent<Button>();
-        previousPageButton = GameObject.Find("PreviousPageButton").GetComponent<Button>();
 
         levelLoader = FindAnyObjectByType<LevelLoader>();
         // Set the first page to be active
@@ -50,7 +46,7 @@ public class PageFlipping : MonoBehaviour
             else if (currentPage == pages.Length - 1)
             {
                 // load the next scene
-                levelLoader.LoadLevel(nextSceneIndex);
+                levelLoader.LoadLevelByIndex(nextSceneIndex);
             }
         }
         // on left arrow press, flip the page to the left
@@ -85,7 +81,7 @@ public class PageFlipping : MonoBehaviour
         else if (currentPage == pages.Length - 1)
         {
             // load the next scene
-            levelLoader.LoadLevel(nextSceneIndex);
+            levelLoader.LoadLevelByIndex(nextSceneIndex);
         }
     }
     public void PreviousPage()

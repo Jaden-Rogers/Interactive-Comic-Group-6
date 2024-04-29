@@ -28,7 +28,7 @@ EditorBuildSettings:
     guid: db816710ace314d419e6fad9f0048cde
   - enabled: 1
     path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_B/Act2_B.unity
-    guid: fd576aeeeb58d4af89cb6d4dbbd3bf9c
+    guid: 7f919dac324bf5247abb083f0944b92f
   - enabled: 1
     path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_B/Act2_B_Ending.unity
     guid: ba859ae05e7fc0144bbcc84094d664d0
@@ -40,8 +40,109 @@ EditorBuildSettings:
     guid: a04445de569929d4aa475a30c9610197
   - enabled: 1
     path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_D/Act2_D.unity
-    guid: b9260e5d8653043fab1e73da9b5929fc
+    guid: 597caff297e0f424a8ba979229f4a0df
   - enabled: 1
     path: Assets/Scenes/Jakob Scenes/ComicScenes/Act_2_D/Act2_D_Ending.unity
     guid: 082f7060bcd328547ba4bdb47d968777
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_A/Act3_A.unity
+    guid: c2993823904d5499b92eb455ddbf958a
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_A/Act3_A_Ending.unity
+    guid: ada5b4214e7825a448f3d19b9720281b
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_B/Act3_B.unity
+    guid: bacff55cca3104353aab1225c2cb4db8
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_B/Act3_B_Ending.unity
+    guid: 4f66d01a79f8d814499bfea2fbbc1475
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_C/Act3_C.unity
+    guid: ca82109ba75a04af994e4b45e27adcf1
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_C/Act3_C_Ending.unity
+    guid: 9bcf595c05a664c47b5851dc22a7531e
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_D/Act3_D.unity
+    guid: d263f24feb4e5420b98c015860127918
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_D/Act3_D_Ending.unity
+    guid: cc11ba07d79b6804ba301922c04a4a1d
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_E/Act3_E.unity
+    guid: 5886df3b87d8a458898c82162f3dc337
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_E/Act3_E_Ending.unity
+    guid: a33222e8845277b4abda9a7af79c6e84
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_F/Act3_F.unity
+    guid: aa136897a797746db93f4646b93f9d45
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_F/Act3_F_Ending.unity
+    guid: 983e217ae9636e84bb3df8079a200b2f
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_G/Act3_G.unity
+    guid: 1c622f1464b7e4a158708187a4b83185
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_G/Act3_G_Ending.unity
+    guid: afdba159cddc2094b8007873e8201805
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_H/Act3_H.unity
+    guid: da38ff740738e48c1983433c18caed13
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_H/Act3_H_Ending.unity
+    guid: 74d92a9179c876e47bb269192cc1fe13
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_A/Act_4_A.unity
+    guid: 618741352b24aa64786eb70d523baf63
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_B/Act_4_B.unity
+    guid: 9485e9616b38c664b9ce32919e001b47
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_C/Act_4_C.unity
+    guid: e80ae1060c3e4b24189530f9be6a5a45
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_D/Act_4_D.unity
+    guid: 312b50c818fd500438e3d050c47ab33d
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_E/Act_4_E.unity
+    guid: 3e98a4428decda8438fcce7673843153
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_F/Act_4_F.unity
+    guid: ece8e372cc900ce45a33a9a3fc667bd2
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_G/Act_4_G.unity
+    guid: baceb5d500a77e8438da17f5a91a67f6
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_H/Act_4_H.unity
+    guid: 48ca8e59cb59b9b4aac9e2f0fbd85e45
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/ComicScenes/Act_4_Ending.unity
+    guid: c4b0a72d668b4194a83082c71df3bff3
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/Act 4 Minigame scenes/Heart Monitor start
+      scene.unity
+    guid: b799ea51e14ba38428499286366475d8
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/Act 4 Minigame scenes/Heart Monitor game.unity
+    guid: 5241d3c0610d0624ab31f11fa44d4dc7
+  - enabled: 1
+    path: Assets/Scenes/Aidan Link Scenes/Act 4 Minigame scenes/Heart Monitor end
+      Scene.unity
+    guid: c43182d9ca1b6be42b732900bb6244ef
+  - enabled: 1
+    path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_Minigame/QuantumMathSplashScreenScene.unity
+    guid: 8920e3ddcca4ecc4fb3f58e1586206e2
+  - enabled: 1
+    path: Assets/Scenes/Jaden Rogers/ComicScenes/Act_1/Act_1_Minigame/QuantumMathScene.unity
+    guid: b14843f375ad17c4a886ec76947f1a39
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/MiniGame/MG2_StartScene.unity
+    guid: decca3ce4e061094f854561e48a704ef
+  - enabled: 1
+    path: Assets/Scenes/Jakob Scenes/MiniGame/JakobMinigame.unity
+    guid: 950100b1d50e7834b8cf29230b97e6d7
+  - enabled: 1
+    path: Assets/Scenes/Act3Jakob/Act_3_Minigame.unity
+    guid: 3449daeee676c5c45a63a1d547e6ef75
   m_configObjects: {}

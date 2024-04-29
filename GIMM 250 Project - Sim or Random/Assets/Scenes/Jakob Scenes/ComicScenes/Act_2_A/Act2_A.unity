@@ -718,7 +718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ef5ef1bf522bf47f1b5ea97c33bcdd67, type: 3}
+  m_Texture: {fileID: 2800000, guid: ce7d68b452224401eacea65ef6e1b7b2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 15c1d00ea6035412bb04b7d5dda3a8c2, type: 3}
+  m_Texture: {fileID: 2800000, guid: f7ea7a7c1338c471fab3107c9e162658, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: eeb0f51c1a0474bfe9d5cd8ea095429e, type: 3}
+  m_Texture: {fileID: 2800000, guid: d0ca3bea59da542969069b90420ee1df, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1515,9 +1515,7 @@ MonoBehaviour:
   - {fileID: 862778502}
   currentPage: 0
   levelLoader: {fileID: 0}
-  nextSceneIndex: 0
-  nextPageButton: {fileID: 0}
-  previousPageButton: {fileID: 0}
+  nextSceneIndex: 43
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

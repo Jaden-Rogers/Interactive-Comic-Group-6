@@ -21,7 +21,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevelByIndex(int levelIndex)
     {
-        StartCoroutine(LoadLevel(LevelIndex));
+        StartCoroutine(LoadLevel(levelIndex));
     }
 
     public IEnumerator LoadLevel(int levelIndex)

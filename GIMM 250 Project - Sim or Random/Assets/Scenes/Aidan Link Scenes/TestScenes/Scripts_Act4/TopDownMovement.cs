@@ -12,6 +12,12 @@ public class AidanTopDownMovement : MonoBehaviour
     private bool isMovingUp = true;
     float speedIncreasePerSecond = 10; //Speed increase per second
     float rotationSpeed = 180f; // Rotation speed in degrees per second
+    public LevelLoader levelLoader;
+
+    void Start()
+    {
+        levelLoader = FindObjectOfType<LevelLoader>(); //Find LevelLoader script
+    }
 
     void Update()
     {
@@ -51,8 +57,8 @@ public class AidanTopDownMovement : MonoBehaviour
     void EndGame()
     {
         Debug.Log("Game Over"); //Debug message to console
-        SceneManager.LoadScene("Aidan End Menu"); //Load EndScreen scene
         rb.constraints = RigidbodyConstraints2D.FreezePosition; //Freeze player position
+        levelLoader.LoadNextLevel(); //Load next level
 
     }
 
